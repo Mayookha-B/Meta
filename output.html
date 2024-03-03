@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Patient Management</h1>
+        <form id="patientForm">
+            <label for="name">Name:</label>
+            
+            <input type="text" id="name" name="name" required>
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob" required>
+            <label for="medical-history">Medical History:</label>
+            <textarea id="medical-history" name="medical-history"></textarea>
+            <label for="appointment-date">Appointment Date:</label>
+            <input type="datetime-local" id="appointment-date" name="appointment-date">
+            <label for="billing-info">Billing Information:</label>
+            <input type="text" id="billing-info" name="billing-info">
+            <label for="medicine-records">Medicine Records:</label>
+            <input type="text" id="medicine-records" name="medicine-records">
+            <button type="submit">Add Patient</button>
+        </form>
+        <ul id="patientList">
+            <!-- Patient list items will be added dynamically here -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
